@@ -2,8 +2,13 @@
 import './App.css'
 
 import img from './assets/background.jpg'
+import useCurrency from './hooks/useCurrencyInfo/useCurrency'
 
 function App() {
+
+  const currency = useCurrency('bdt')
+  console.log(currency);
+  
 
 
   return (
@@ -45,7 +50,7 @@ function App() {
           <button className=" w-full bg-[#744895] text-white py-5 rounded-md text-xl uppercase" >Convert BDT To USD</button>
         </div>
         <div>
-          <button className=" absolute top-[46%] right-[46%] bg-[#744895] text-white px-9 py-3 rounded-md text-xl uppercase" >Swap</button>
+          <button className=" absolute top-[40%] right-[46%] bg-[#744895] text-white px-9 py-3 rounded-md text-xl uppercase" >Swap</button>
         </div>
 
     </div>
